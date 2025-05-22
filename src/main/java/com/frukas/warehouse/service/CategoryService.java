@@ -31,7 +31,7 @@ public class CategoryService {
 
     public List<Category> findAll(Pageable pageable){
 
-        return  categoryRepository.findByIsActiveTrue(pageable).stream().toList();
+        return  categoryRepository.findByIsActiveTrue(pageable).toList();
     }
 
     public Category save(Category category){

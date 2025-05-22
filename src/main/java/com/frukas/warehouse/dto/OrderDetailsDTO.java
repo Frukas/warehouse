@@ -1,4 +1,12 @@
 package com.frukas.warehouse.dto;
 
-public record OrderDetailsDTO(Long id, Long userId, Long ProductID, int quantity, String OrderStatus) {
+import com.frukas.warehouse.common.OrderStatus;
+
+public record OrderDetailsDTO(Long id,
+                              Long userId,
+                              Long ProductID,
+                              int quantity,
+                              double price,
+                              OrderStatus OrderStatus
+                              ) {
 }

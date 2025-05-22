@@ -26,6 +26,8 @@ public class OrderDetails {
     @Embedded
     private CreatedUpdateTime createdUpdateTime;
 
+    private boolean isActive = true;
+
     public Long getId() {
         return id;
     }
@@ -72,5 +74,21 @@ public class OrderDetails {
 
     public void setOrderStatus(OrderStatus orderStatus) {
         this.orderStatus = orderStatus;
+    }
+
+    public CreatedUpdateTime getCreatedUpdateTime() {
+        return createdUpdateTime;
+    }
+
+    public void setCreatedUpdateTime(CreatedUpdateTime createdUpdateTime) {
+        this.createdUpdateTime = createdUpdateTime;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }
